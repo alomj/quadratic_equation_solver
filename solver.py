@@ -2,6 +2,11 @@ import math
 
 
 def quadratic_equation_solver(a, b, c):
+
+    if a == 0:
+        print("Invalid input: a cannot be zero in a quadratic equation.")
+        return
+
     d = (b ** 2) - (4 * a * c)
 
     if d > 0:
