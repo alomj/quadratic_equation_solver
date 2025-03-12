@@ -2,7 +2,6 @@ import sys
 from solver import quadratic_equation_solver
 
 def get_valid_float(prompt):
-    while True:
         user_input = input(prompt)
         try:
             return float(user_input)
@@ -10,7 +9,6 @@ def get_valid_float(prompt):
             print(f"Error. Expected a valid real number, got {user_input} instead", file=sys.stdout)
 
 def interactive_mode():
-    while True:
         a = get_valid_float("a = ")
         b = get_valid_float("b = ")
         c = get_valid_float("c = ")
